@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<style>
+    body {
+        overflow-x: hidden;
+        background-color: rgb(41, 40, 40);
+    }
+
+    #abttitle {
+        font-size: 30px;
+        padding: 10px;
+        padding-right: 77vw;
+    }
+
+    .abtnav {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        margin: -8px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        padding: auto;
+        height: 60px;
+    }
+
+    .abtnav li {
+        list-style: none;
+        float: left;
+        padding: 15px;
+    }
+
+    .abtnav li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .abtnav li a:hover {
+        color: gray;
+    }
+
+    .abtnav ul {
+        overflow: auto;
+    }
+
+    .abtcontainer {
+        height: 500px;
+        display: inline-flex;
+        margin: 10px;
+        /* border: 2px black solid; */
+    }
+
+    #home1 {
+        width: 40%;
+        height: 470px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        margin-right: 120px;
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px black;
+    }
+
+    #imghome1 {
+        height: 350px;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    #home2 {
+        width: 40%;
+        height: 470px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px black;
+    }
+
+    /* #imghome2 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    } */
+
+    #home3 {
+        width: 28%;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        /* margin-bottom: 10px;
+    margin-top: 10px; */
+        /* margin-left: 60px;
+    float: left; */
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px black;
+    }
+
+    /* #imghome3 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    } */
+
+    #home4 {
+        width: 28%;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        /* margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px; */
+        /* float: left; */
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px black;
+    }
+
+    /* #imghome4 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    } */
+
+    .about {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        background-color: white;
+        padding: 20px;
+        margin: 40px -10px -10px -10px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #abttitle {
+            font-size: 30px;
+            padding: 10px;
+            padding-right: 60vw;
+        }
+
+        .abtcontainer {
+            /* height: 400px; */
+            display: inline-flex;
+            margin: 10px;
+        }
+
+        #home1 {
+            width: 70%;
+            height: 400px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            background-color: white;
+            padding: 10px;
+            margin: 25px;
+            /* margin-right: 100px; */
+            border-radius: 10px;
+            border: 2px black;
+            box-shadow: 7px 7px 10px black;
+        }
+
+        #imghome1 {
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px black solid;
+        }
+
+        #home2 {
+            width: 70%;
+            height: 400px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            background-color: white;
+            padding: 10px;
+            margin: 25px;
+            border-radius: 10px;
+            border: 2px black;
+            box-shadow: 7px 7px 10px black;
+        }
+
+        #home3 {
+            width: 70%;
+            height: 400px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            background-color: white;
+            padding: 10px;
+            margin: 25px;
+            border-radius: 10px;
+            border: 2px black;
+            box-shadow: 7px 7px 10px black;
+        }
+
+        #home4 {
+            width: 70%;
+            height: 400px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            background-color: white;
+            padding: 10px;
+            margin: 25px;
+            border-radius: 10px;
+            border: 2px black;
+            box-shadow: 7px 7px 10px black;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="abtnav">
+            <ul>
+                <li id="abttitle">About Us</a></li>
+                <li><a href="Signed">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="abtcontainer">
+        <div id="home1">
+            <input type="image"
+                src="https://firebasestorage.googleapis.com/v0/b/authentication-63cb4.appspot.com/o/karthik254Project.jpeg?alt=media&token=594a1f11-da47-40da-b0a8-9a100203addd"
+                alt="image" id="imghome1">
+            <p>
+                <b>Kartik Pauskar</b><br>
+                191IT223 <br> kartikpauskar.191it223@nitk.edu.in
+            </p>
+        </div>
+        <div id="home2">
+            <input type="image"
+                src="https://firebasestorage.googleapis.com/v0/b/authentication-63cb4.appspot.com/o/shashiaknt254Project.jpeg?alt=media&token=26daa599-831f-465e-ba7a-36eca5442416"
+                alt="image" id="imghome1">
+            <p>
+                <b>Shashikant Kumar</b><br>
+                191IT249 <br> shashikantkumar.191it249@nitk.edu.in
+            </p>
+        </div>
+    </div>
+
+    <div class="abtcontainer">
+        <div id="home1">
+            <input type="image"
+                src="https://firebasestorage.googleapis.com/v0/b/authentication-63cb4.appspot.com/o/akshay254Project.jpeg?alt=media&token=64c58844-b4e0-46d9-8e55-270a1cc58148"
+                alt="image" id="imghome1">
+            <p>
+                <b>Akshay Nair</b><br>
+                191IT103 <br> a.191it103@nitk.edu.in
+            </p>
+        </div>
+        <div id="home2">
+            <input type="image"
+                src="https://firebasestorage.googleapis.com/v0/b/authentication-63cb4.appspot.com/o/shiv254project.jpeg?alt=media&token=af8750ab-b750-41c6-b88f-9fa4322e140c"
+                alt="image" id="imghome1">
+            <p>
+                <b>Shiv Dubey</b><br>
+                191IT250 <br> shiv.191it250@nitk.edu.in
+            </p>
+        </div>
+    </div>
+
+    <div class="about">
+        <h1>About Us</h1>
+        <hr>
+        <h2>Driver Based Application with AI Framework for Chatbot</h2>
+        <p>
+            Kartik Pauskar - 191IT223<br>Shashikant Kumar - 191IT249<br>Akshay Nair - 191IT103<br>Shiv Dubey - 191IT250
+        </p>
+    </div>
+
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "6082dc750c90bd000792f323";
+        (function () {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+    </script>
+    <!-- End of ChatBot code -->
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+/* HOME PAGE CSS */
+body{
+    overflow-x: hidden;
+}
+#title{
+    font-size: 30px;
+    padding: 10px;
+    padding-right: 800px;
+}
+.nav {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: -8px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    padding: auto;
+    height: 60px;
+}
+.nav li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+.nav li a:hover{
+    color: gray;
+}
+.nav ul{
+    overflow: auto;
+}
+#homesearch{
+    width: 97%;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+#srcbtn{
+    position: absolute;
+    right: 3%;
+    top: 56px;
+    height: 49px; 
+    width: 150px;
+    background-color: darkgray;
+    font-size: 20px; 
+    color: black;
+    text-decoration: none; 
+}
+#srcbtn:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.slider{
+    width: 110%;
+    height: 120px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHmH8Sl3QqO6kNp_iacZEGMekOf7C5fNwqQ&usqp=CAU');
+    background-repeat: no-repeat;
+    margin: -15px;
+    animation: anim 20s infinite linear;
+}
+@keyframes anim{
+    0%{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHmH8Sl3QqO6kNp_iacZEGMekOf7C5fNwqQ&usqp=CAU');}
+    25%{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaJrClpz6OCNAKrcvUJwByJrk84Kxoaj_RVQ&usqp=CAU');}
+    50%{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfe3ul9LcgtAzHzRgKEj4aa_cgDepnfyG2hA&usqp=CAU');}
+    75%{background-image: url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1582749200/assets/34/115533-464c-4827-9f04-b69c1f40b349/original/Driver_in_car_smiling.jpg');}
+}
+#c2{
+    width: 30%;
+    height: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: rgb(235, 219, 219);
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    border-radius: 10px;
+    border: 2px black solid;
+    box-shadow: 7px 7px 10px black;
+}
+#c2:hover{
+    cursor: text;
+}
+.container{
+    background-image: url('https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2019/06/Twitter-precise-location-tagging.jpg?w=1500&quality=82&strip=all&ssl=1');
+    height: 650px;
+    margin-top: -15px;
+    margin-right: -10px;
+    margin-left: -10px;
+    border: 2px black solid;
+    /* filter: blur(5px); */
+}
+.container3{
+    height: 500px;
+    display: inline-flex;
+    margin: 10px;
+    /* border: 2px black solid; */
+}
+#home1{
+    width: 28%;
+    height: 490px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    /* margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px; */
+    /* float: left; */
+    border-radius: 10px;
+    border: 2px black;
+    box-shadow: 7px 7px 10px gray;
+}
+#imghome1{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+#home2{
+    width: 28%;
+    height: 490px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    /* margin-bottom: 10px;
+    margin-top: 10px; */
+    /* margin-left: 60px;
+    float: left; */
+    border-radius: 10px;
+    border: 2px black;
+    box-shadow: 7px 7px 10px gray;
+}
+#imghome2{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+#home3{
+    width: 28%;
+    height: 490px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    /* margin-bottom: 10px;
+    margin-top: 10px; */
+    /* margin-left: 60px;
+    float: left; */
+    border-radius: 10px;
+    border: 2px black;
+    box-shadow: 7px 7px 10px gray;
+} 
+#imghome3{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+.poster{
+    width: 100%;
+    height: 400px;
+    background-image: url('https://www.olacabs.com/webstatic/img/ola-booking.png');
+    background-repeat: no-repeat;
+}
+.about{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin: 1px -10px -10px -10px;
+}
+
+/* SIGNUP PAGE CSS */
+#title2{
+    font-size: 40px;
+    padding: 10px;
+}
+.nav2 {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: -8px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    padding: auto;
+    height: 70px;
+}
+.nav2 li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+}
+.nav2 li a{
+    text-decoration: none;
+    color: white;
+}
+.nav2 li a:hover{
+    color: gray;
+}
+.nav2 ul{
+    overflow: auto;
+}
+.signupform{
+    width: 25%;
+    height: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    border-radius: 30px;
+    border: 4px black solid;
+    box-shadow: 10px 10px 50px black;
+}
+.data{
+    font-size: 25px;
+    border-radius: 10px;
+}
+#datain{
+    border-radius: 30px;
+    background-color: white;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 50px;
+    padding: 20px;
+    margin-top: 30px;
+    border: white solid;
+}
+.container2{
+    background-image: url('CSSbg.jpeg');
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -15px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.loginform{
+    width: 25%;
+    height: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 110px;
+    float: right;
+    border-radius: 30px;
+    border: 4px black solid;
+    box-shadow: 10px 10px 50px black;
+}
+#datain2{
+    border-radius: 30px;
+    background-color: white;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 20px;
+    /* padding-bottom: 50px; */
+    padding-top: 30px;
+    margin-top: 10px;
+    border: white solid;
+}
+
+/* #signinbtn{
+    position: absolute;
+    left: 44%;
+    bottom: 10%;
+    height: 50px; 
+    width: 150px; 
+    background-color: black; 
+    border-radius: 15px; 
+    font-size: 20px; 
+    color: white; 
+    text-decoration: none; 
+    border: solid black;
+}
+#signinbtn:hover{
+    background-color: gray;
+    cursor: pointer;
+} */
+
+/* Car Booking CSS */
+#cartitle{
+    font-size: 30px;
+    padding: 10px;
+    padding-right: 1000px;
+}
+.carnav{
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: -8px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    padding: auto;
+    height: 60px;
+}
+.carnav li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+}
+.carnav li a{
+    text-decoration: none;
+    color: white;
+}
+.carnav li a:hover{
+    color: gray;
+}
+.carnav ul{
+    overflow: auto;
+}
+#carsearch{
+    width: 97%;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+#carsrcbtn{
+    position: absolute;
+    right: 3%;
+    top: 56px;
+    height: 49px; 
+    width: 150px;
+    background-color: darkgray;
+    font-size: 20px; 
+    color: black;
+    text-decoration: none; 
+}
+#carsrcbtn:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+/* .carcontainer{
+    background-image: url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80');
+    height: 1000px;
+    margin-top: -15px;
+    margin-right: -10px;
+    margin-left: -10px;
+    border: 2px black solid;
+} */
+#sub1{
+    display: flex;
+}
+#sub2{
+    display: flex;
+}
+#carhome1{
+    width: 28%;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 2px black;
+    box-shadow: 7px 7px 10px gray;
+}
+#carimghome1{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+#carhome2{
+    width: 28%;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 2px black;
+    box-shadow: 7px 7px 10px gray;
+}
+#carimghome2{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+#carhome3{
+    width: 28%;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 2px black;
+    box-shadow: 7px 7px 10px gray;
+} 
+#carimghome3{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+#carhome4{
+    width: 28%;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 2px black;
+    box-shadow: 7px 7px 10px gray;
+}
+#carimghome4{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+#carhome5{
+    width: 28%;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 2px black;
+    box-shadow: 7px 7px 10px gray;
+}
+#carimghome5{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+#carhome6{
+    width: 28%;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 2px black;
+    box-shadow: 7px 7px 10px gray;
+} 
+#carimghome6{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+/* Driver CSS */
+#drvabt{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: lavender;
+}

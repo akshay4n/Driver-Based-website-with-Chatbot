@@ -1,0 +1,26 @@
+{"intents": [
+    {"tag": "greetings",
+    "patterns":["hello","hey","hi","good day","greetings","what's up","how is it going"],
+    "responses":["Hello","Hey!","What can I do for you?"]
+    },
+    {"tag":"goodbye",
+        "patterns":["cya","see you later","goodbye","i am leaving","have a good day","bye","ciao","see ya","exit"],
+        "responses":["Sad to see you go :(","See you Later!","Goodbye!"]
+    },
+    {"tag":"shop",
+        "patterns":["order","place an order","shop"],
+        "responses":["Our Website gives you choices based on your desire to travel! Please choose from Drivers,Vehicles!"]
+    },
+    {"tag":"driver",
+        "patterns":["i want a driver","driver","driver required"],
+        "responses":["Please go under the Driver tab in the home page to access the Best drivers across the country!"]
+    },
+    {"tag":"vehicle",
+        "patterns":["car","sedan","truck","Book Cars","Premium Luxury Cars","Electric Car","Cabs","Off Roading"],
+        "responses":["Please go under the Car tab in the home page to access the Best Cars with the Best deals!"]
+    },
+    {"tag":"about",
+        "patterns":["about you","contact","who are you","contact manager"],
+        "responses":["Please head over to the Contact Us page. We'll love to hear from you!"]
+    }
+]}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signed In</title>
+</head>
+
+<style>
+    body {
+        overflow-x: hidden;
+    }
+
+    #title {
+        font-size: 30px;
+        padding: 10px;
+        padding-right: 830px;
+    }
+
+    .nav {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        margin: -8px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        padding: auto;
+        height: 60px;
+    }
+
+    .nav li {
+        list-style: none;
+        float: left;
+        padding: 15px;
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav li a:hover {
+        color: gray;
+    }
+
+    .nav ul {
+        overflow: auto;
+    }
+
+    #signedsearch {
+        width: 97%;
+        height: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+
+    .signednav {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: -8px;
+        margin-top: -20px;
+        padding: auto;
+        height: 70px;
+    }
+
+    #srcbtn {
+        position: absolute;
+        right: 3%;
+        top: 57px;
+        height: 49px;
+        width: 150px;
+        background-color: darkgray;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    #srcbtn:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    .slider {
+        width: 110%;
+        height: 120px;
+        border: black solid 1px;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHmH8Sl3QqO6kNp_iacZEGMekOf7C5fNwqQ&usqp=CAU');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: 0;
+        margin: -10px;
+        animation: anim 20s infinite linear;
+    }
+
+    @keyframes anim {
+        0% {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHmH8Sl3QqO6kNp_iacZEGMekOf7C5fNwqQ&usqp=CAU');
+        }
+
+        25% {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaJrClpz6OCNAKrcvUJwByJrk84Kxoaj_RVQ&usqp=CAU');
+        }
+
+        50% {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfe3ul9LcgtAzHzRgKEj4aa_cgDepnfyG2hA&usqp=CAU');
+        }
+
+        75% {
+            background-image: url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1582749200/assets/34/115533-464c-4827-9f04-b69c1f40b349/original/Driver_in_car_smiling.jpg');
+        }
+    }
+
+    .container {
+        background-color: black;
+        text-align: center;
+        padding: 1px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-top: -15px;
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    .signedcontainer {
+        height: 570px;
+        display: inline-flex;
+        margin: 10px;
+    }
+
+    #home1 {
+        width: 28%;
+        height: 490px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px gray;
+    }
+
+    #imghome1 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    #home2 {
+        width: 28%;
+        height: 490px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px gray;
+    }
+
+    #imghome2 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    #home3 {
+        width: 28%;
+        height: 490px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px gray;
+    }
+
+    #imghome3 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    .about {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        background-color: black;
+        padding: 20px;
+        margin: 1px -10px -10px -10px;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin-left: 20px;
+    }
+
+    /* .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: black;
+    } */
+
+    .dropbtn:hover{
+        cursor: pointer;
+        color: gray;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #profileimg{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li id="title"><a href="IT254.html">IT254 Project</a></li>
+                <li><a href="About.html">Contact Us</a></li>
+                <div class="dropdown">
+                    <li><img src="https://www.searchpng.com/wp-content/uploads/2019/02/Profile-PNG-Icon.png" alt="Profile" id="profileimg"></li>
+                    <button class="dropbtn">Kartik
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="#">Orders</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav class="signednav">
+            <ul>
+                <input type="search" name="Search" id="signedsearch" placeholder="Search By city, cars">
+                <a href="#">
+                    <input type="button" value="Search" id="srcbtn">
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+
+    </div>
+    <div class="container">
+        <h1>Services we Offer</h1>
+    </div>
+    <div class="signedcontainer">
+        <div id="home1">
+            <a href="Cars.html">
+
+                <!-- </a> target="_blank"> -->
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80"
+                    alt="image" id="imghome1">
+            </a>
+            <p>
+                <b>Car</b><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero repellat dolorem expedita laboriosam aut
+                sunt exercitationem aspernatur deleniti doloribus iusto quasi consequuntur optio minus velit eaque
+                libero maiores, quibusdam perferendis laudantium. Dolores laborum officiis ea nemo exercitationem mol
+            </p>
+        </div>
+        <div id="home2">
+            <a href="Drivers.html">
+                <!-- target="_blank"> -->
+                <input type="image"
+                    src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2020/05/19/665730-1746067783-1521646516.jpg?itok=JQIe1Xmn"
+                    alt="image" id="imghome2">
+            </a>
+            <p>
+                <b>Driver</b><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero repellat dolorem expedita laboriosam aut
+                sunt exercitationem aspernatur deleniti doloribus iusto quasi consequuntur optio minus velit eaque
+                libero maiores, quibusdam perferendis laudantium. Dolores laborum officiis ea nemo exercitationem
+                molest?
+            </p>
+        </div>
+        <div id="home3">
+            <a href="#">
+
+                <!-- </a>target="_blank"> -->
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1516862523118-a3724eb136d7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80"
+                    alt="image" id="imghome3">
+            </a>
+            <p>
+                <b>Travel</b><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero repellat dolorem expedita laboriosam auto
+                sunt exercitationem aspernatur deleniti doloribus iusto quasi consequuntur optio minus velit eaque
+                libero maiores, quibudbibdbsd sdbkn dks dk k svhsvshvshvshshssianna
+            </p>
+        </div>
+    </div>
+    <div class="about">
+        <h1>WEB Development</h1>
+        <hr>
+        <h2>Driver Based Application with AI Framework for Chatbot</h2>
+        <p>
+            Kartik Pauskar - 191IT223<br>Shashikant Kumar - 191IT249<br>Akshay Nair - 191IT103<br>Shiv Dubey - 191IT250
+        </p>
+    </div>
+</body>
+
+</html>

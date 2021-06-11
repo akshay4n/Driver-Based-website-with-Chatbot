@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="IT254.css">
+</head>
+
+<style>
+    /* HOME PAGE CSS */
+    body {
+        overflow-x: hidden;
+    }
+
+    #title {
+        font-size: 30px;
+        padding: 10px;
+        padding-right: 60vw;
+    }
+
+    .nav {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        margin: -8px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        padding: auto;
+        height: 60px;
+    }
+
+    .nav li {
+        list-style: none;
+        float: left;
+        padding: 15px;
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav li a:hover {
+        color: gray;
+    }
+
+    .nav ul {
+        overflow: auto;
+    }
+
+    #homesearch {
+        width: 97%;
+        height: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+
+    .homenav2 {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: -8px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        padding: auto;
+        height: 70px;
+    }
+
+    #srcbtn {
+        position: absolute;
+        right: 3%;
+        top: 57px;
+        height: 49px;
+        width: 150px;
+        background-color: darkgray;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    #srcbtn:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    .slider {
+        width: 110%;
+        height: 120px;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHmH8Sl3QqO6kNp_iacZEGMekOf7C5fNwqQ&usqp=CAU');
+        /* background-repeat: no-repeat; */
+        margin-top: 0;
+        margin: -10px;
+        animation: anim 20s infinite linear;
+    }
+
+    @keyframes anim {
+        0% {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHmH8Sl3QqO6kNp_iacZEGMekOf7C5fNwqQ&usqp=CAU');
+        }
+
+        25% {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaJrClpz6OCNAKrcvUJwByJrk84Kxoaj_RVQ&usqp=CAU');
+        }
+
+        50% {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfe3ul9LcgtAzHzRgKEj4aa_cgDepnfyG2hA&usqp=CAU');
+        }
+
+        75% {
+            background-image: url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1582749200/assets/34/115533-464c-4827-9f04-b69c1f40b349/original/Driver_in_car_smiling.jpg');
+        }
+    }
+
+    #c2 {
+        width: 30%;
+        /* height: 400px; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: rgb(235, 219, 219);
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 100px;
+        margin-left: 100px;
+        float: left;
+        border-radius: 10px;
+        border: 2px black solid;
+        box-shadow: 7px 7px 10px black;
+    }
+
+    #c2:hover {
+        cursor: text;
+    }
+
+    .container {
+        background-image: url('https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2019/06/Twitter-precise-location-tagging.jpg?w=1500&quality=82&strip=all&ssl=1');
+        height: 650px;
+        margin-top: -15px;
+        margin-right: -10px;
+        margin-left: -10px;
+        border: 2px black solid;
+        /* filter: blur(5px); */
+    }
+
+    .container3 {
+        height: 500px;
+        display: inline-flex;
+        margin: 10px;
+        /* border: 2px black solid; */
+    }
+
+    #home1 {
+        width: 28%;
+        /* height: 490px; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        /* margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px; */
+        /* float: left; */
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px gray;
+    }
+
+    #imghome1 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    #home2 {
+        width: 28%;
+        /* height: 490px; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        /* margin-bottom: 10px;
+    margin-top: 10px; */
+        /* margin-left: 60px;
+    float: left; */
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px gray;
+    }
+
+    #imghome2 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    #home3 {
+        width: 28%;
+        /* height: 490px; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        /* margin-bottom: 10px;
+    margin-top: 10px; */
+        /* margin-left: 60px;
+    float: left; */
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px gray;
+    }
+
+    #imghome3 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    .poster {
+        width: 40%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/authentication-63cb4.appspot.com/o/poster254Project.jpeg?alt=media&token=9c26e3e9-6975-4dfa-af65-3b95d905e30a');
+        background-repeat: no-repeat;
+    }
+
+    .about {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        background-color: black;
+        padding: 20px;
+        margin: 1px -10px -10px -10px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #title {
+            font-size: 30px;
+            padding: 10px;
+            padding-right: 25vw;
+        }
+
+        #c2 {
+            width: 70%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            background-color: rgb(235, 219, 219);
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: 100px;
+            margin-left: 100px;
+            float: left;
+            border-radius: 10px;
+            border: 2px black solid;
+            box-shadow: 7px 7px 10px black;
+        }
+
+        .container {
+            background-image: url('https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2019/06/Twitter-precise-location-tagging.jpg?w=1500&quality=82&strip=all&ssl=1');
+            height: 550px;
+            margin-top: -15px;
+            margin-right: -10px;
+            margin-left: -10px;
+            border: 2px black solid;
+            /* filter: blur(5px); */
+        }
+
+        .poster {
+            display: none;
+        }
+
+        .container3 {
+            height: 500px;
+            /* display: inline-flex; */
+            margin: 10px;
+            /* border: 2px black solid; */
+        }
+
+        #home1 {
+            width: 100%;
+            /* height: 400px; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            background-color: white;
+            padding: 10px;
+            margin: 25px;
+            border-radius: 10px;
+            border: 2px black;
+            box-shadow: 7px 7px 10px gray;
+        }
+
+        #imghome1 {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px black solid;
+        }
+
+        #home2 {
+            width: 100%;
+            /* height: 400px; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            background-color: white;
+            padding: 10px;
+            margin: 25px;
+            border-radius: 10px;
+            border: 2px black;
+            box-shadow: 7px 7px 10px gray;
+        }
+
+        #imghome2 {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px black solid;
+        }
+
+        #home3 {
+            width: 100%;
+            /* height: 400px; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            background-color: white;
+            padding: 10px;
+            margin: 25px;
+            border-radius: 10px;
+            border: 2px black;
+            box-shadow: 7px 7px 10px gray;
+        }
+
+        #imghome3 {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px black solid;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li id="title"><a href="IT254.html">IT254 Project</a></li>
+                <li><a href="IT254-Signup.html">SignUp</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="/aboutUs">contact us</a></li>
+                <!-- <li><a href="Login.html">Login</a></li> -->
+                <!-- <li><a href="/special">special</a></li> -->
+                <!-- <li><a href="/logout">logout</a></li> -->
+                <!-- <li><a href="">Hey</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav class="homenav2">
+            <ul>
+                <input type="search" name="Search" id="homesearch" placeholder="Search By city, cars">
+                <a href="#">
+                    <input type="button" value="Search" id="srcbtn">
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+
+    </div>
+    <div class="container">
+        <p id="c2">
+            <b>About us</b> <br><br>Do you have a vehicle but no one to drive? <br><br>Here you can book a driver
+            anytime,
+            anywhere who will take you to your destination
+            For trips, loading heavy furniture, adventurous Off-Roading, you name it <br><br> Well don't have a vehicle?
+            <br><br>Well we got you covered, you can book any car you want..... from Luxurious Premium cars, Classy
+            Sedans, Mini cars, Electric cars, Off-Roading vehicles and also cabs
+        </p>
+    </div>
+    <div class="container3">
+        <div id="home1">
+            <a href="Login.html">
+
+                <!-- </a> target="_blank"> -->
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80"
+                    alt="image" id="imghome1">
+            </a>
+            <p>
+                <b>Car</b><br><br>
+                Book Luxurious Premium cars, Classy Sedans, Mini cars, Electric cars, Off-Roading vehicles and also cabs
+            </p>
+        </div>
+        <div id="home2">
+            <a href="Login.html">
+                <!-- target="_blank"> -->
+                <input type="image"
+                    src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2020/05/19/665730-1746067783-1521646516.jpg?itok=JQIe1Xmn"
+                    alt="image" id="imghome2">
+            </a>
+            <p>
+                <b>Driver</b><br><br>
+                Book a driver for trips, loading heavy furniture, adventurous Off-Roading
+            </p>
+        </div>
+        <div id="home3">
+            <a href="Login.html">
+
+                <!-- </a>target="_blank"> -->
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1516862523118-a3724eb136d7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80"
+                    alt="image" id="imghome3">
+            </a>
+            <p>
+                <b>Travel</b><br><br>
+                This Feature will be coming soon.... Stay tuned
+            </p>
+        </div>
+    </div>
+    <div class="poster">
+    </div>
+    <div class="about">
+        <h1>WEB Development</h1>
+        <hr>
+        <h2>Driver Based Application with AI Framework for Chatbot</h2>
+        <p>
+            Kartik Pauskar - 191IT223<br>Shashikant Kumar - 191IT249<br>Akshay Nair - 191IT103<br>Shiv Dubey - 191IT250
+        </p>
+    </div>
+
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "6082dc750c90bd000792f323";
+        (function () {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+    </script>
+    <!-- End of ChatBot code -->
+</body>
+
+</html>

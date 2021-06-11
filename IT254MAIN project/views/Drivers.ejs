@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Drivers</title>
+    <link rel="stylesheet" href="IT254.css">
+</head>
+
+<style>
+    /* Driver Booking CSS */
+    #cartitle {
+        font-size: 30px;
+        padding: 10px;
+        padding-right: 60vw;
+    }
+
+    .carnav {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        margin: -8px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        padding: auto;
+        height: 60px;
+    }
+
+    .carnav li {
+        list-style: none;
+        float: left;
+        padding: 15px;
+    }
+
+    .carnav li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .carnav li a:hover {
+        color: gray;
+    }
+
+    .carnav ul {
+        overflow: auto;
+    }
+
+    #carsearch {
+        width: 97%;
+        height: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+
+    .drvnav {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: -8px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        padding: auto;
+        height: 70px;
+    }
+
+    #carsrcbtn {
+        position: absolute;
+        right: 3%;
+        top: 56px;
+        height: 49px;
+        width: 150px;
+        background-color: darkgray;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    #carsrcbtn:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    #sub1 {
+        display: flex;
+    }
+
+    #sub2 {
+        display: flex;
+    }
+
+    #carhome1 {
+        width: 28%;
+        /* height: 300px; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px gray;
+    }
+
+    #carimghome1 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    #carhome2 {
+        width: 28%;
+        /* height: 300px; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px gray;
+    }
+
+    #carimghome2 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    #carhome3 {
+        width: 28%;
+        /* height: 300px; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        background-color: white;
+        padding: 10px;
+        margin: 25px;
+        border-radius: 10px;
+        border: 2px black;
+        box-shadow: 7px 7px 10px gray;
+    }
+
+    #carimghome3 {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px black solid;
+    }
+
+    /* Driver CSS */
+    #drvabt {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        background-color: lavender;
+    }
+
+    .about {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        background-color: black;
+        padding: 20px;
+        margin: 1px -10px -10px -10px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #cartitle {
+            font-size: 30px;
+            padding: 10px;
+            padding-right: 25vw;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="carnav">
+            <ul>
+                <li id="cartitle"><a href="Cars.html"></a>Get Drivers</li>
+                <li><a href="Signed">Home</a></li>
+                <li><a href="aboutUs">contact us</a></li>
+                <li><a href="logout">logout</a></li>
+                <!-- <li><a href="IT254-Signup.html" target="_blank">SignUp</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav class="drvnav">
+            <ul>
+                <input type="search" name="Search" id="carsearch" placeholder="Search Rides By Location">
+                <a href="#">
+                    <input type="button" value="Search" id="carsrcbtn">
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="drvabt">
+        <h1>Have a vehicle but no one to Drive? Get Drivers for any Vehicle Here</h1>
+    </div>
+    <div class="carcontainer">
+        <div id="sub1">
+            <div id="carhome1">
+                <a href="Booking">
+                    <input type="image"
+                        src="https://us.123rf.com/450wm/dolgachov/dolgachov1909/dolgachov190903758/130746019-transport-vehicle-and-people-concept-man-or-driver-driving-car-in-summer.jpg?ver=6"
+                        alt="image" id="carimghome1">
+                </a>
+                <p>Driver for daily basis</p>
+            </div>
+            <div id="carhome2">
+                <a href="Booking">
+                    <input type="image"
+                        src="https://mcsweeneyricci.com/wp-content/uploads/2018/11/winter-driving-maine-whiteout-ap328625591785.jpg"
+                        alt="image" id="carimghome2">
+                </a>
+                <p>Driver for Off-Roading</p>
+            </div>
+            <div id="carhome3">
+                <a href="Booking">
+                    <input type="image"
+                        src="https://www.trucknews.com/wp-content/uploads/2020/11/iStock-170169493-630x420.jpg"
+                        alt="image" id="carimghome3">
+                </a>
+                <p>Driver for a Truck</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="about">
+        <h1>WEB Development</h1>
+        <hr>
+        <h2>Get Drivers</h2>
+        <p>
+            Kartik Pauskar - 191IT223<br>Shashikant Kumar - 191IT249<br>Akshay Nair - 191IT103<br>Shiv Dubey - 191IT250
+        </p>
+    </div>
+
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "6082dc750c90bd000792f323";
+        (function () {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+    </script>
+    <!-- End of ChatBot code -->
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="IT254.css">
+    <script>src = "app.js"</script>
+</head>
+
+<style>
+    /* SIGNUP PAGE CSS */
+    #title2i {
+        font-size: 40px;
+        padding: 10px;
+        padding-right: 55vw;
+    }
+
+    #title2 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .nav2 {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: -8px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        padding: auto;
+        height: 70px;
+    }
+
+    .nav2 li {
+        list-style: none;
+        float: left;
+        padding: 15px;
+    }
+
+    .nav2 li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav2 li a:hover {
+        color: gray;
+    }
+
+    .nav2 ul {
+        overflow: auto;
+    }
+
+    .loginform {
+        width: 50%;
+        height: 580px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin-top: 100px;
+        margin-left: 470px;
+        margin-right: 500px;
+        border-radius: 30px;
+        border: 4px black solid;
+        box-shadow: 10px 10px 50px black;
+    }
+
+    .data {
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+    #datain {
+        height: 352px;
+        border-radius: 30px;
+        background-color: white;
+        margin-left: -8px;
+        margin-right: -8px;
+        padding: 20px;
+        margin-top: 80px;
+        border: white solid;
+    }
+
+    .container2 {
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/authentication-63cb4.appspot.com/o/background.jpeg?alt=media&token=d485ae0d-7829-4d95-9b99-d9ab2990f99c');
+        height: 800px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -15px;
+        margin-right: -10px;
+        margin-left: -10px;
+        display: flex;
+        /* padding: 100px, 400px; */
+    }
+
+    #loginbtn {
+        margin: 50px;
+        height: 50px;
+        width: 150px;
+        background-color: black;
+        border-radius: 15px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        border: solid black;
+    }
+
+    #loginbtn:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 800px) {
+        #title2i {
+            font-size: 40px;
+            padding: 10px;
+            padding-right: 30vw;
+        }
+
+        #title2 {
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .loginform {
+            width: 100%;
+            height: 580px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 30px;
+            border: 4px black solid;
+            box-shadow: 10px 10px 50px black;
+        }
+
+        .loginform {
+            width: 50%;
+            height: 580px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            margin-top: 100px;
+            margin-left: 240px;
+            margin-right: 500px;
+            border-radius: 30px;
+            border: 4px black solid;
+            box-shadow: 10px 10px 50px black;
+        }
+
+        .data {
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #datain {
+            height: 360px;
+            border-radius: 30px;
+            background-color: white;
+            margin-left: -8px;
+            margin-right: -8px;
+            padding: 20px;
+            margin-top: 90px;
+            border: white solid;
+        }
+
+        .container2 {
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/authentication-63cb4.appspot.com/o/background.jpeg?alt=media&token=d485ae0d-7829-4d95-9b99-d9ab2990f99c');
+            height: 800px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="nav2">
+            <ul>
+                <li id="title2i"><a>Login</a></li>
+                <li id="title2"><a href="/">home</a></li>
+                <li id="title2"><a href="/IT254-Signup.html">signup</a></li>
+                <li id="title2"><a href="aboutUs">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container2">
+        <form action="/login" method="POST" class="loginform">
+            <h1>Login</h1>
+            <div id="datain">
+                <div>
+                    <input type="text" required name="usrName" placeholder="Username/Email" class="data">
+                </div>
+                <br>
+                <div>
+                    <input type="password" required name="password" placeholder="Password" class="data">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="LogIn" id="loginbtn">
+                    <!-- <input type="password" name="confirmPassword" id="shashikant" placeholder="Confirm Password"
+                            class="data">
+                        <span id="error-name"></span> -->
+                </div>
+                <!-- <div>
+                        <a href="Login.ejs" method="POST">
+                            <input type="submit" value="LogIn" id="loginbtn">
+                        </a>
+                    </div> -->
+            </div>
+        </form>
+    </div>
+
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "6082dc750c90bd000792f323";
+        (function () {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+    </script>
+    <!-- End of ChatBot code -->
+</body>
+
+</html>

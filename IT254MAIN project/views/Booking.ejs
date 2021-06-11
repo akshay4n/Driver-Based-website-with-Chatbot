@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+</head>
+
+<style>
+    body {
+        overflow-x: hidden;
+        background-color: rgb(41, 40, 40);
+    }
+
+    #bookingtitle {
+        font-size: 30px;
+        padding: 10px;
+        padding-right: 60vw;
+    }
+
+    .bookingnav {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        margin: -8px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        padding: auto;
+        height: 60px;
+    }
+
+    .bookingnav li {
+        list-style: none;
+        float: left;
+        padding: 15px;
+    }
+
+    .bookingnav li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .bookingnav li a:hover {
+        color: gray;
+    }
+
+    .bookingnav ul {
+        overflow: auto;
+    }
+
+    #bookingsearch {
+        width: 97%;
+        height: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+
+    .bookingnav2 {
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: -8px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        padding: auto;
+        height: 70px;
+    }
+
+    #srcbtn {
+        position: absolute;
+        right: 3%;
+        top: 57px;
+        height: 49px;
+        width: 150px;
+        background-color: darkgray;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    #srcbtn:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    #bookingcontainer {
+        background-image: url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80');
+        width: 90%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: rgb(41, 40, 40);
+        padding: 10px;
+        margin: auto;
+        margin-top: 70px;
+        border-radius: 5px;
+    }
+
+    #bgimg {
+        width: 100%;
+    }
+
+    .data {
+        font-size: 20px;
+    }
+
+    #datain {
+        width: 30%;
+        text-align: center;
+        border-radius: 5px;
+        background-color: white;
+        margin: 30px;
+        padding: 20px;
+        border: white solid;
+    }
+
+    #bookingbtn {
+        margin: 15px;
+        height: 35px;
+        width: 150px;
+        background-color: rgb(41, 40, 40);
+        border-radius: 5px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        border: solid black;
+    }
+
+    #bookingbtn:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .about {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        background-color: white;
+        padding: 20px;
+        margin: 40px -10px -10px -10px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #bookingtitle {
+            font-size: 30px;
+            padding: 10px;
+            padding-right: 25vw;
+        }
+
+        .data {
+            font-size: 25px;
+        }
+
+        #datain {
+            width: 97%;
+            text-align: center;
+            border-radius: 5px;
+            background-color: white;
+            margin: -10px;
+            border: white solid;
+        }
+
+        #bookingcontainer {
+            width: 90%;
+            background-color: rgb(41, 40, 40);
+            padding: 10px;
+            margin: auto;
+            margin-top: 70px;
+            border-radius: 5px;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="bookingnav">
+            <ul>
+                <li id="bookingtitle">Booking Page</a></li>
+                <!-- <li><a href="Signed.ejs">Home</a></li> -->
+                <li><a href="aboutUs">Contact Us</a></li>
+                <li><a href="Signed">home</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <nav class="bookingnav2">
+            <ul>
+                <input type="search" name="Search" id="bookingsearch" placeholder="Search By city, cars">
+                <a href="#">
+                    <input type="button" value="Search" id="srcbtn">
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="bookingcontainer">
+        <!-- <img src="https://img.gaadicdn.com/images/carexteriorimages/630x420/Rolls-Royce/Rolls-Royce-Ghost/6397/1594192080019/front-left-side-47.jpg"
+            alt="Car Image" id="bgimg"> -->
+        <form action="/booked" method="POST" class="bookingform">
+            <div id="datain">
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Please Enter
+                    Your Booking Details</h1>
+                <div>
+                    <input type="text" name="Name" placeholder="Enter Your Name" class="data" required>
+                </div>
+                <br>
+                <div>
+                    <input type="email" name="mail3" placeholder="Email" class="data" required>
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="phoneNo2" placeholder="Phone Number" class="data" required>
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="house" placeholder="House no." class="data" required>
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="street" placeholder="Street Address" class="data" required>
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="city" placeholder="City" class="data" required>
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="lmark" placeholder="Landmark" class="data">
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="pc" placeholder="Pin Code" class="data" required>
+                </div>
+                <br>
+                <div>
+                    <input type="number" name="hr" placeholder="How many hours?" class="data" required>
+                </div>
+                <br>
+                <div class="data">
+                    Date<input type="date" name="date" class="data" required>
+                </div>
+                <br>
+                <div class="data">
+                    Time<input type="time" name="time" class="data" required>
+                </div>
+                <br>
+                <div>
+                    <a href="/booked" method="POST">
+                        <input type="submit" value="Book Now" id="bookingbtn">
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="about">
+        <h1>Booking Page</h1>
+        <hr>
+        <h2>Driver Based Application with AI Framework for Chatbot</h2>
+        <p>
+            Kartik Pauskar - 191IT223<br>Shashikant Kumar - 191IT249<br>Akshay Nair - 191IT103<br>Shiv Dubey - 191IT250
+        </p>
+    </div>
+
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "6082dc750c90bd000792f323";
+        (function () {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+    </script>
+    <!-- End of ChatBot code -->
+</body>
+
+</html>
